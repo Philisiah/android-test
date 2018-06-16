@@ -24,3 +24,9 @@ allprojects {
         }
     }
 }
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
