@@ -121,9 +121,7 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
-    lintOptions { 
-    abortOnError false 
-   }
+
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
@@ -137,6 +135,12 @@ android {
             }
         }
     }
+}
+
+android {
+lintOptions {
+abortOnError false
+}
 }
 
 dependencies {
